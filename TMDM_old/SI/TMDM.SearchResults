@@ -1,0 +1,19 @@
+---- MccDataOut Matches (23 in 2 files) ----
+Drive_task.c (c:\projects\atollic\tmdm\src):uint16_t MccDataOut[14]={0xAC53,0xA5A5,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0};
+Drive_task.c (c:\projects\atollic\tmdm\src):							DataOut=(uMCC_IN)MccDataOut[11];
+Drive_task.c (c:\projects\atollic\tmdm\src):								MccDataOut[5]=(tmp&0x7FFF)<<4;
+Drive_task.c (c:\projects\atollic\tmdm\src):								MccDataOut[5]=0;
+Drive_task.c (c:\projects\atollic\tmdm\src):							MccDataOut[11]=(uint16_t)DataOut.all; 
+Drive_task.c (c:\projects\atollic\tmdm\src):							DataOut=(uMCC_IN)MccDataOut[11];
+Drive_task.c (c:\projects\atollic\tmdm\src):								MccDataOut[3]=(tmp&0x7FFF)<<4;
+Drive_task.c (c:\projects\atollic\tmdm\src):								MccDataOut[3]=0;
+Drive_task.c (c:\projects\atollic\tmdm\src):							MccDataOut[11]=(uint16_t)DataOut.all; 
+Drive_task.c (c:\projects\atollic\tmdm\src):							MccDataOut[13]=calc_checksum(&MccDataOut[0],13);
+Drive_task.c (c:\projects\atollic\tmdm\src):							MccDataOut[1]=MccDataIn[1];
+Handlers.c (c:\projects\atollic\tmdm\src):extern uint16_t MccDataOut[14];
+Handlers.c (c:\projects\atollic\tmdm\src):				//		memcpy(LocalDataOut, MccDataOut, sizeof(MccDataOut)); 
+Handlers.c (c:\projects\atollic\tmdm\src):					MccDataOut[13]=calc_checksum(&MccDataOut[0],13);
+Handlers.c (c:\projects\atollic\tmdm\src):					SPI1->DR=MccDataOut[datacnt]; //SPI_I2S_SendData(SPI1,LocalDataOut[datacnt]);
+Handlers.c (c:\projects\atollic\tmdm\src):					SPI1->DR=MccDataOut[datacnt]; //SPI_I2S_SendData(SPI1,LocalDataOut[datacnt]);
+Handlers.c (c:\projects\atollic\tmdm\src):					//memcpy(LocalDataOut, MccDataOut, sizeof(MccDataOut)); 
+Handlers.c (c:\projects\atollic\tmdm\src):					//MccDataOut[13]=calc_checksum(&MccDataOut[0],13);
