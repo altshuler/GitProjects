@@ -53,4 +53,3 @@
 140122_inc_Repeater	-version 15. 6 hours mode,learning mode, get function
 140122_src_Repeater
 
-140224_src_Nisko_water_meter2  -version 22504.
