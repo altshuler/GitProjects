@@ -1,0 +1,56 @@
+130417_src_Nisko_water_meter2 - ver 123- release
+
+130506_src_Nisko_water_meter2 - ver 123 After Shlomi changes
+
+130528_src_Repeater   - ver-9 - Autoconfig, Get
+130528_inc_Repeater
+
+130603_src_Nisko_water_meter2 - ver 124 Sending packet logic changed
+
+130606_src_Repeater	- Command cancelling, repeater reply
+130606_inc_Repeater
+
+130619_src_Repeater	- Remote control functionality, Initial stage. (UDP send/receive is not working)
+130619_inc_Repeater
+
+130621_src_Repeater	- Remote control functionality, Shlomi
+130621_inc_Repeater
+
+130627_src_Repeater	- Remote control Set/Get. Code optimisation AP_Mode_Comm  sections commented
+130627_inc_Repeater
+
+130630_src_Repeater	- Remote control Set/Get. Before memory cleaning
+130630_inc_Repeater
+
+130725_src_Repeater	- Timer interrupt bug found(Show RTC-OFF), before E2Prom debugging (corrupted packet received)
+130725_inc_Repeater
+
+130729_src_Repeater	-corrupted packets debug ver. Checksum performed on storing and fetching operations.
+130729_inc_Repeater	
+
+130808_src_Repeater	-EEPROM issue cared, but not fixed (retry used). Before PrintNetworkPacket() changing.
+130808_inc_Repeater	using CongigBuf instead RxBuf in packet UDP and probe TX. Used 3x time probe TX	.Modem ver-19
+
+130909_src_Repeater	-version 12. DCO calib bug fixed.Modem ver-17 used.
+130909_inc_Repeater
+
+130929_src_Repeater	-version 12. E2Prom Max storing size bug fixed.Modem ver-20 used.
+130929_inc_Repeater
+
+131015_src_Repeater	-version 12. 6 hours mode,repeater set and get func. Not compiled- flash problem.
+131015_inc_Repeater
+
+131105_src_Nisko_water_meter2- Logger Debug version. Find in modem.c sendLogger() function for debug history.
+
+131126_src_Nisko_water_meter2- Logger Debug. version-1257.
+
+131204_src_Nisko_water_meter2- Logger Debug. version-12511.
+
+131204_src_Nisko_water_meter2_test- test sw version
+
+131205_src_Nisko_water_meter2 -initial config bug fixed (changeModemConfig()). version-22500.
+
+140122_inc_Repeater	-version 15. 6 hours mode,learning mode, get function
+140122_src_Repeater
+
+140224_src_Nisko_water_meter2  -version 22504.
